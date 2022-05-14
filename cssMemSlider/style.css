@@ -33,22 +33,22 @@ input[type="radio"] {
 
 #one-image {
   grid-area: one;
-  background-image: url('/assets/image-1.jpg');
+  width: 100%;
 }
 
 #two-image {
   grid-area: two;
-  background-image: url('/assets/image-2.jpg');
+  width: 100%;
 }
 
 #three-image {
   grid-area: three;
-  background-image: url('/assets/image-3.jpg');
+  width: 100%;
 }
 
 #four-image {
   grid-area: four;
-  background-image: url('/assets/image-4.jpg');
+  width: 100%;
 }
 
 .wrapper__subimage {
@@ -133,13 +133,21 @@ span {
 }
 
 @media(max-width: 800px) {
-  img {
-    width: 100%;
-  }
+
 }
 
 @media(max-width: 420px) {
-  img {
+  .wrapper__subimage {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .wrapper__controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .slider__subimage {
     width: 100%;
   }
 }

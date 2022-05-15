@@ -11,7 +11,6 @@
   max-width: 50rem;
   padding: 1em;
   margin: 0 auto;
-  transition: all 2s;
 }
 
 input[type="radio"] {
@@ -90,12 +89,30 @@ input[type="radio"] {
   justify-content: end;
 }
 
+.controls__buttons {
+  display: flex;
+}
+
+.button {
+  padding: 0.5rem;
+  display: flex;
+  cursor: pointer;
+}
+
 span {
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  border: 0.5rem solid red;
+  border: 0.2rem solid red;
+  background-color: red;
   border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button:hover span {
+  border-color: blueviolet;
+  background-color: blueviolet;
 }
 
 /* animation*/
@@ -130,6 +147,22 @@ span {
 
 #four-radio:checked ~ .wrapper__subimage .wrapper__descriptions {
   transform: translateX(-300%);
+}
+
+#one-radio:checked ~ .wrapper__subimage #one-label span {
+  background-color: transparent;
+}
+
+#two-radio:checked ~ .wrapper__subimage #two-label span {
+  background-color: transparent;
+}
+
+#three-radio:checked ~ .wrapper__subimage #three-label span {
+  background-color: transparent;
+}
+
+#four-radio:checked ~ .wrapper__subimage #four-label span {
+  background-color: transparent;
 }
 
 @media(max-width: 800px) {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>cssMemSlider</title>
+</head>
+<body>
+  <div class="wrapper">
+    <input type="radio" name="radio" id="one-radio" checked>
+    <input type="radio" name="radio" id="two-radio">
+    <input type="radio" name="radio" id="three-radio">
+    <input type="radio" name="radio" id="four-radio">
+    <div class="slider wrapper__slider">
+      <div class="images slider__images">
+        <img src="./assets/image-1.jpg" alt="mem1" id="one-image">
+        <img src="./assets/image-2.jpg" alt="mem2" id="two-image">
+        <img src="./assets/image-3.jpg" alt="mem3" id="three-image">
+        <img src="./assets/image-4.jpg" alt="mem4" id="four-image">
+      </div>
+    </div>
+    <div class="subimage wrapper__subimage">
+      <div class="slider__subimage">
+        <div class="descriptions wrapper__descriptions">
+          <div class="description" id="one-description">Первокурсник на первой сессии.</div>
+          <div class="description" id="two-description">Старшекурсник на последней сесии.</div>
+          <div class="description" id="three-description">Перед поступление в магистратуру.</div>
+          <div class="description" id="four-description">Не смешно? Баллы не снимаем.</div>
+        </div>
+      </div>
+      <div class="controls wrapper__controls">
+        <div class="buttons controls__buttons">
+          <label class="button" for="one-radio" id="one-label"><span></span></label>
+          <label class="button" for="two-radio" id="two-label"><span></span></label>
+          <label class="button" for="three-radio" id="three-label"><span></span></label>
+          <label class="button" for="four-radio" id="four-label"><span></span></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
